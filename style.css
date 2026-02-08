@@ -121,3 +121,10 @@ button:hover{
     font-size: 12px;
     color: var(--muted2);
 }
+
+.footer {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(243,245,255,0.5);
+}

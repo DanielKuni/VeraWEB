@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vera – בדיקת היענות</title>
-    <meta name="description" content="עמוד הרשמה לקבלת עדכון על הפרויקט." />
+    <title>Vera – Interest Check</title>
+    <meta name="description" content="Sign-up page to get updates about the project." />
     <link rel="stylesheet" href="./style.css" />
 </head>
 
@@ -15,44 +15,51 @@
 
         <h1>Vera</h1>
         <p class="subtitle">
-            סבתא שלך שלחה סרטון והיא בטוחה שהוא אמיתי.
-            אנחנו כאן כדי להוכיח לה שכלב לא יכול לרקוד ככה.
-            בודקים בשבילך אם תמונה או וידאו הם אמיתיים או בינה מלכותית.        </p>
+            Your grandma sent a video and she's sure it's real.
+            <br />
+            We're here to prove that a dog can't dance like that.
+            <br />
+            We'll check if an image or video is real or AI-generated.
+        </p>
         <hr />
 
-        <h2>השארת פרטים</h2>
-        <p class="hint">ניצור קשר כשנעלה גרסה ראשונה.</p>
+        <h2>Stay in the Loop</h2>
+        <p class="hint">We'll reach out when the first version is live.</p>
 
         <form class="form" id="leadForm">
             <label>
-                שם מלא
-                <input type="text" name="fullName" placeholder="ישראל ישראלי" required />
+                Full name
+                <input type="text" name="fullName" placeholder="Jordan Smith" required />
             </label>
 
             <label>
-                אימייל
+                Email
                 <input type="email" name="email" placeholder="name@example.com" required />
             </label>
 
             <label>
-                טלפון
-                <input type="tel" name="phone" placeholder="05X-XXXXXXX" required />
+                Phone
+                <input type="tel" name="phone" placeholder="(555) 123-4567" required />
             </label>
 
-            <button type="submit">שלחו</button>
+            <button type="submit">Send</button>
 
             <p class="privacy">
-                בלחיצה על “שלחו” אתם מאשרים שניצור איתכם קשר לגבי הפרויקט.
+                By clicking "Send" you agree that we may contact you about the project.
             </p>
         </form>
     </section>
 </main>
 
+<footer class="footer">
+    <p>© 2026 Vera. All rights reserved.</p>
+</footer>
+
 <script>
-    // כרגע זה רק מונע רענון כדי שלא "יקפוץ" — בהמשך נחבר לשליחת לידים (Tally/Formspree/Netlify)
+    // For now this only prevents refresh; later we'll connect to lead capture (Tally/Formspree/Netlify).
     document.getElementById('leadForm').addEventListener('submit', (e) => {
         e.preventDefault();
-        alert('תודה! קיבלנו את הפרטים 🙌');
+        alert('Thanks! We received your details 🙌');
         e.target.reset();
     });
 </script>
